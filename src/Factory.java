@@ -34,10 +34,29 @@ public class Factory {
         System.out.println(plane1.model);
 
         Airplane plane2 = new Airplane();
+        System.out.println(plane1.name);
+        System.out.println(plane2.capacity);
+        System.out.println(plane1.isDoubleDecker);
+        System.out.println(plane1.wingspan);
+        System.out.println(plane1.model);
         //todo: make 2 more airplane objects
-        //todo: for one of the objects chnge all the instance variables
+        //todo: for one of the objects change all the instance variables
         //todo: for both objects print all the instance variables
+        Airplane plane3 = new Airplane();
+        plane3.isDoubleDecker = false;
+        plane3.name = "Emirates";
+        plane3.capacity = 690;
+        plane3.wingspan = 79;
+        plane3.model = "B747";
+        System.out.println(plane1.name);
+        System.out.println(plane2.capacity+10);
+        System.out.println(plane3.isDoubleDecker);
+        System.out.println(plane1.wingspan);
+        System.out.println(plane1.model);
+
     }
+
+
 
     public void factoryInfo (){
         System.out.println(yearFounded);
