@@ -17,4 +17,18 @@ public class Airplane {
         isDoubleDecker = true;
 
     }
+    public Airplane(int Pcapacity){
+        capacity = Pcapacity;
+        name = "Etihad Airways";
+        wingspan = 80;
+        model = "Airbus-380";
+        isDoubleDecker = true;
+    }
+    public void printInfo(){
+        System.out.println(capacity);
+        System.out.println(wingspan);
+        System.out.println(model);
+        System.out.println(isDoubleDecker);
+        System.out.println(name);
+    }
 }

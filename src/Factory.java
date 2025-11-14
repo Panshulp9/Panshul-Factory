@@ -15,7 +15,7 @@ public class Factory {
     //Constructors allow us to make a factory (in this case)
     //scope is the whole class
     //no void
-    public Factory(){
+    public Factory() {
         factoryInfo();
         isOpen = false;
         //string for manager is only in the constructor
@@ -49,12 +49,15 @@ public class Factory {
         plane3.wingspan = 79;
         plane3.model = "B747";
         System.out.println(plane1.name);
-        System.out.println(plane2.capacity+10);
+        System.out.println(plane2.capacity + 10);
         System.out.println(plane3.isDoubleDecker);
         System.out.println(plane1.wingspan);
         System.out.println(plane1.model);
-
+        Airplane plane4 = new Airplane(232);
+        plane4.printInfo();
     }
+
+
 
 
 
