@@ -53,8 +53,12 @@ public class Factory {
         System.out.println(plane3.isDoubleDecker);
         System.out.println(plane1.wingspan);
         System.out.println(plane1.model);
-        Airplane plane4 = new Airplane(232);
+        Airplane plane4 = new Airplane(232, "Etihad Airways", "Airbus 380", true, 180);
         plane4.printInfo();
+        Musical set1 = new Musical();
+        set1.printInfo();
+        Musical set2 = new Musical(17, "Something Rotten", true);
+        set2.printInfo();
     }
 
 

@@ -17,12 +17,16 @@ public class Airplane {
         isDoubleDecker = true;
 
     }
-    public Airplane(int Pcapacity){
+    //todo: add a paremter for model isDoubleDecker and length to the constructor
+    //to set the value of the instance variables to the parameters
+    //fix the related problems in factory
+    public Airplane(int Pcapacity, String pName, String pModel, boolean pIsDoubleDecker, int pWingspan){
         capacity = Pcapacity;
-        name = "Etihad Airways";
-        wingspan = 80;
-        model = "Airbus-380";
-        isDoubleDecker = true;
+        name = pName;
+        wingspan = pWingspan;
+        model = pModel;
+        isDoubleDecker = pIsDoubleDecker;
+        name = pName;
     }
     public void printInfo(){
         System.out.println(capacity);
